@@ -2,6 +2,7 @@ application: leanplum-staging
 version: wpfromstarterproject
 runtime: php55
 api_version: 1
+default_expiration: "7d"
 
 handlers:
 - url: /(.*\.(htm|html|css|js))$
@@ -54,4 +55,4 @@ skip_files:
 - ^(.*/)?\.bat$
 - ^(.*/)?\.sh$
 - ^(.*/)?\.md$
-- ^(.*/)?.*node_modules/.*$
+- ^node_modules/.*
