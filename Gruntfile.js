@@ -22,23 +22,18 @@ module.exports = function(grunt) {
           separator: ';'
         },
         src: [
-          // 'wordpress/wp-content/themes/twentyfourteen/js/*.js',
-          'wordpress/wp-content/themes/twentyfourteen/js/bootstrap.min.js',
-          'wordpress/wp-content/themes/twentyfourteen/js/gmaps.js',
-          'wordpress/wp-content/themes/twentyfourteen/js/bootstrap.min.js',
-          'wordpress/wp-content/themes/twentyfourteen/js/audio.min.js',
-          'wordpress/wp-content/themes/Splendid/js/plugins.js',
-          'wordpress/wp-content/themes/Splendid/js/smoothscroll.min.js',
-          'wordpress/wp-content/themes/Splendid/js/scripts.js',
+          'wordpress/wp-includes/js/jquery/jquery.js',
+          'wordpress/wp-includes/js/jquery/jquery-migrate.js',
+          'wordpress/wp-content/themes/twentyfourteen/js/functions.js'
         ],
-        dest: 'wordpress/wp-content/themes/Splendid/js/all.js'
+        dest: 'wordpress/wp-content/themes/twentyfourteen/js/all.js'
       },
       css: {
         options: {
           separator: ';'
         },
         src: [
-          'wordpress/wp-content/themes/twentyfourteen/genericons/genericons.css',
+          // 'wordpress/wp-content/themes/twentyfourteen/genericons/genericons.css',
           'wordpress/wp-content/themes/twentyfourteen/style.css',
         ],
         dest: 'wordpress/wp-content/themes/twentyfourteen/css/all.css'
